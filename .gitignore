@@ -6,6 +6,8 @@
 .pnp.js
 
 ./client_secret_816067676440-ob6qs5ft0ndmj15bs2m9raoasvvu7icr.apps.googleusercontent.com.json
+./firebaseToken.txt
+./firebaseToken.txt
 
 # testing
 /coverage

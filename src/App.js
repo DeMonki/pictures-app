@@ -1,6 +1,5 @@
 import './App.css';
-import { useState, useMemo, useEffect } from 'react';
-import Image from './components/Image/Image';
+import { useState } from 'react';
 import LocallyServedImage from './components/LocallyServedImage/LocallyServedImage';
 import { imageMap } from './assets/map/imageMap';
 import { RxMinusCircled, RxPlusCircled, RxReload}  from 'react-icons/rx'
