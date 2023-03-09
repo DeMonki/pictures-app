@@ -4,6 +4,11 @@ li {
     align-items: center;
 }
 
+.image-li {
+  display: flex;
+  justify-content:  space-between;
+}
+
 .adjust-buttons {
   width: 3rem;
   height: 1.875rem;
@@ -22,66 +27,26 @@ li {
   font-family: 'Courier New', Courier, monospace;
   font-size: 18px;
   font-weight: 900;
+  position: relative;
 }
 
+.image-styles {
+  padding: 2px;
+  border: 6px double #efefef;
+  /* box-shadow: 2px 2px 2px 2px #ababab; */
+}
 
-.width-50 {
-    width: 50px;
-  }
-  .width-51 {
-    width: 51px;
-  }
-  .width-52 {
-    width: 52px;
-  }
-  .width-53 {
-    width: 53px;
-  }
-  .width-54 {
-    width: 54px;
-  }
-  .width-55 {
-    width: 55px;
-  }
-  .width-56 {
-    width: 56px;
-  }
-  .width-57 {
-    width: 57px;
-  }
-  .width-58 {
-    width: 58px;
-  }
-  .width-59 {
-    width: 59px;
-  }
-  .width-60 {
-    width: 60px;
-  }
-  .width-65 {
-    width: 65px;
-  }
-  .width-70 {
-    width: 70px;
-  }
-  .width-75 {
-    width: 75px;
-  }
-  .width-80 {
-    width: 80px;
-  }
-  .width-85 {
-    width: 85px;
-  }
-  .width-90 {
-    width: 90px;
-  }
-  .width-95 {
-    width: 95px;
-  }
-  .width-100 {
-    width: 100px;
-  }
-  .width-150 {
-    width: 150px;
-  }
+/* .img-title {
+  width: 150px;
+} */
+
+.show-plus {
+  background-color: #efefef;
+  border-radius: 5px;
+  color: #111111;
+  left: -190px;
+  min-height: 2rem;
+  padding: 0.75rem;
+  position: absolute;
+  z-index: 100;
+}
