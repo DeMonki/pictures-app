@@ -10,6 +10,7 @@
 
 .photo-controls {
   display: flex;
+  flex-direction: row;
 }
 
 .reset-button, .inc-buttons, .images-direction {
@@ -17,6 +18,15 @@
   font-size: 36px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .reset-button, .inc-buttons, .images-direction {
+    font-size: 24px;
+  }
+  .photo-controls {
+    flex-direction: column;
+  }
 }
 
 .btn-span {
