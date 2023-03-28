@@ -72,10 +72,6 @@ const App = () => {
       setFirstReset(false);
     }
   };
-  // useEffect(() => {
-  //   console.log('=== useEffectuseEffect App.jsx [72] ===');
-  //   widthRef.current = widthness;
-  // }, [widthness]);
 
   const filterInputId = 'filterInput';
 

@@ -9,7 +9,6 @@ export const LocallyServedImage = ({
   showTitles,
 }) => {
   const [widthness, setWidthness] = useState(null || topWidthness.current);
-  console.log('=== widthness LocallyServedImage.jsx [12] ===', widthness, topWidthness);
   const [showPlus, setShowPlus] = useState(false);
   const reduceWidth = () => {
     if (widthness < 50) {
@@ -34,7 +33,6 @@ export const LocallyServedImage = ({
   }, []);
 
   useEffect(() => {
-    console.log('=== topWidthness LocallyServedImage.jsx [28] ===', topWidthness);
     setWidthness(topWidthness.current);
   }, [topWidthness.current]);
   useEffect(() => {
