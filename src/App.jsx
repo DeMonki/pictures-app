@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import {
   RxMinusCircled, RxPlusCircled, RxReload, RxDragHandleHorizontal, RxDragHandleVertical,
 } from 'react-icons/rx';
@@ -21,15 +21,19 @@ const App = () => {
   const increaseWidth = () => {
     if (tooBigOrTooSmall) {
       setWidthness(144);
+      widthRef.current = 144;
     } else {
       setWidthness((prevWidthness) => 1.25 * prevWidthness);
+      widthRef.current = 1.25 * widthness;
     }
   };
   const decreaseWidth = () => {
     if (widthness < 50) {
       setWidthness(144);
+      widthRef.current = 144;
     } else {
       setWidthness((prevWidthness) => 0.75 * prevWidthness);
+      widthRef.current = 0.75 * widthness;
     }
   };
 
@@ -68,10 +72,10 @@ const App = () => {
       setFirstReset(false);
     }
   };
-  useEffect(() => {
-    console.log('=== useEffectuseEffect App.jsx [72] ===');
-    widthRef.current = widthness;
-  }, [widthness]);
+  // useEffect(() => {
+  //   console.log('=== useEffectuseEffect App.jsx [72] ===');
+  //   widthRef.current = widthness;
+  // }, [widthness]);
 
   const filterInputId = 'filterInput';
 
