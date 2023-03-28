@@ -1,5 +1,5 @@
 import './App.css';
-import { useState, React } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   RxMinusCircled, RxPlusCircled, RxReload, RxDragHandleHorizontal, RxDragHandleVertical,
 } from 'react-icons/rx';
@@ -13,6 +13,7 @@ const App = () => {
   const [showTitles, setShowTitles] = useState(false);
   const [widthness, setWidthness] = useState(144);
   const [dateComparison, setDateComparison] = useState(0);
+  const widthRef = React.useRef(widthness);
 
   const title = 'photos app';
   const tooBigOrTooSmall = (widthness > 1100 || widthness < 50);
@@ -48,6 +49,9 @@ const App = () => {
   };
 
   const resetWidth = () => {
+    setWidthness((prevWidthness) => (prevWidthness * 0) + 143);
+    widthRef.current = 143;
+    setFilterVal('');
     if (!firstReset) {
       setFirstReset(true);
       const d = Date.now();
@@ -63,9 +67,11 @@ const App = () => {
       }
       setFirstReset(false);
     }
-    setWidthness(143);
-    setFilterVal('');
   };
+  useEffect(() => {
+    console.log('=== useEffectuseEffect App.jsx [72] ===');
+    widthRef.current = widthness;
+  }, [widthness]);
 
   const filterInputId = 'filterInput';
 
@@ -110,7 +116,7 @@ const App = () => {
               key={keyVal}
               image={image}
               showTitles={showTitles}
-              topWidthness={widthness}
+              topWidthness={widthRef}
               flexDirection={flexDirection}
             />
           );

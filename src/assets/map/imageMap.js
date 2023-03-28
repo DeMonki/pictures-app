@@ -1,104 +1,104 @@
-import BarryRichmanDaveNovember2022 from '../images/BarryRichmanDaveNovember2022.jpg';
-import BuddyAndSeveralDudes2017maybe from '../images/BuddyAndSeveralDudes2017maybe.jpg';
-import FathomsDown from '../images/FathomsDown.jpg';
-import Godaddys from '../images/Godaddys.jpg';
-import SeveralDudes1990 from '../images/SeveralDudes1990.jpg';
-import SeveralDudesAtRio from '../images/SeveralDudesAtRio.jpg';
-import Stir from '../images/Stir.jpg';
-import DrewBass from '../images/DrewBass.jpg';
-import BMEW from '../images/BeachMiceonBeachatElephantWalk.jpg';
-import Mie2002 from '../images/MieBabyBerensteinChristmasDay2002.jpg';
-import MiePoppyMall3yrs from '../images/MiePoppyMall3yrs.jpg';
-import MieSnowWhite from '../images/MieSnowWhite.jpg';
-import Mieage3waitingforSantasvisittoMorganPark from '../images/Mieage3waitingforSantasvisittoMorganPark.jpg';
-import MieatObashouse from '../images/MieatObashouse.jpg';
-import MiewithMadelineNeko3yrswatchingTV from '../images/MiewithMadelineNeko3yrswatchingTV.jpg';
-import MieswingingherdollsFeb03 from '../images/MieswingingherdollsFeb03.jpg';
-import BHMonth from '../images/BHMonth.png';
+import O from '../images/1.JPG';
+import O1 from '../images/2.JPG';
+import O2 from '../images/3.JPG';
+import O3 from '../images/4.JPG';
+import O4 from '../images/5.JPG';
+import O5 from '../images/6.JPG';
+import O6 from '../images/7.JPG';
+import O7 from '../images/8.JPG';
+import O8 from '../images/9.JPG';
+import O9 from '../images/10.JPG';
+import O10 from '../images/11.JPG';
+import O11 from '../images/12.JPG';
+import O12 from '../images/13.JPG';
+import O13 from '../images/14.JPG';
+import O14 from '../images/15.JPG';
+import O15 from '../images/16.JPG';
+import O16 from '../images/17.JPG';
 
 const imageMap = [
   {
-    src: BMEW,
+    src: O,
     alt: 'Beach Mice Elephant Walk',
     title: 'Beach Mice Elephant Walk',
   },
   {
-    src: BHMonth,
+    src: O1,
     alt: 'Caricature',
     title: 'Caricature',
   },
   {
-    src: BarryRichmanDaveNovember2022,
+    src: O2,
     alt: 'David and Barry Richman Nov 2022',
     title: 'David and Barry Richman Nov 2022',
   },
   {
-    src: BuddyAndSeveralDudes2017maybe,
+    src: O3,
     alt: 'Dudes and Buddy',
     title: 'Dudes and Buddy',
   },
   {
-    src: FathomsDown,
+    src: O4,
     alt: 'Fathoms Down',
     title: 'Fathoms Down',
   },
   {
-    src: Godaddys,
+    src: O5,
     alt: 'Godaddys',
     title: 'Godaddys',
   },
   {
-    src: SeveralDudes1990,
+    src: O6,
     alt: 'Several Dudes 1990',
     title: 'Several Dudes 1990',
   },
   {
-    src: SeveralDudesAtRio,
+    src: O7,
     alt: 'Several Dudes At Rio',
     title: 'Several Dudes At Rio',
   },
   {
-    src: Stir,
+    src: O8,
     alt: 'Stir 1993 or 1994',
     title: 'Stir 1993 or 1994',
   },
   {
-    src: DrewBass,
+    src: O9,
     alt: 'Drew Powell',
     title: 'Drew Powell',
   },
   {
-    src: Mie2002,
+    src: O10,
     alt: 'Mie  2002',
     title: 'Mie  2002',
   },
   {
-    src: MiePoppyMall3yrs,
+    src: O11,
     alt: 'Mie',
     title: 'Mie',
   },
   {
-    src: MieSnowWhite,
+    src: O13,
     alt: 'Mie Snow White',
     title: 'Mie Snow White',
   },
   {
-    src: Mieage3waitingforSantasvisittoMorganPark,
+    src: O14,
     alt: 'Christmas Santa at Morgans Park',
     title: 'Christmas Santa at Morgans Park',
   },
   {
-    src: MieatObashouse,
+    src: O15,
     alt: 'Mie at Obas house',
     title: 'Mie at Obas house',
   },
   {
-    src: MiewithMadelineNeko3yrswatchingTV,
+    src: O16,
     alt: 'Mie with Madeline Neko 3 yrs watching TV',
     title: 'Mie with Madeline Neko 3 yrs watching TV',
   },
   {
-    src: MieswingingherdollsFeb03,
+    src: O12,
     alt: 'Mie swinging her dolls Feb 03',
     title: 'Mie swinging her dolls Feb 03',
   },

@@ -4,11 +4,12 @@ import './LocallyServedImage.css';
 
 export const LocallyServedImage = ({
   image,
-  topWidthness = 145,
+  topWidthness,
   flexDirection,
   showTitles,
 }) => {
-  const [widthness, setWidthness] = useState(143);
+  const [widthness, setWidthness] = useState(null || topWidthness.current);
+  console.log('=== widthness LocallyServedImage.jsx [12] ===', widthness, topWidthness);
   const [showPlus, setShowPlus] = useState(false);
   const reduceWidth = () => {
     if (widthness < 50) {
@@ -24,9 +25,6 @@ export const LocallyServedImage = ({
       setWidthness((prevWidthness) => Math.floor(prevWidthness * 1.2));
     }
   };
-  useEffect(() => {
-    setWidthness(topWidthness);
-  }, [topWidthness]);
 
   const setSetShowPlusOn = React.useCallback(() => {
     setShowPlus(true);
@@ -34,6 +32,16 @@ export const LocallyServedImage = ({
   const setSetShowPlusOff = React.useCallback(() => {
     setShowPlus(false);
   }, []);
+
+  useEffect(() => {
+    console.log('=== topWidthness LocallyServedImage.jsx [28] ===', topWidthness);
+    setWidthness(topWidthness.current);
+  }, [topWidthness.current]);
+  useEffect(() => {
+    if (flexDirection === 'row') {
+      setWidthness(topWidthness.current);
+    }
+  }, [flexDirection]);
 
   return (
     <li className="image-li">
@@ -54,6 +62,7 @@ export const LocallyServedImage = ({
           style={widthness ? { width: `${widthness}px` } : ''}
           alt={image.alt}
           src={image.src}
+          width={widthness}
         />
         { showTitles
           ? <p className="img-title">{image.title}</p>
