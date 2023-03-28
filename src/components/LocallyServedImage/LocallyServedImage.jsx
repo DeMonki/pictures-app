@@ -65,7 +65,7 @@ export const LocallyServedImage = ({
           width={widthness}
         />
         { showTitles
-          ? <p className="img-title">{image.title}</p>
+          ? <p className="img-title">{image.title.length > 20 ? `${image.title.slice(0, 20)}...` : image.title }</p>
           : null}
       </div>
       {flexDirection === 'column'
